@@ -1,3 +1,14 @@
+### Design Reference
+Design UI mengacu pada design system berikut:
+[shadcn/ui design system by Pietro Schirano](https://www.figma.com/community/file/1203061493325953101/shadcn-ui-design-system)
+
+Tujuan penggunaan design ini:
+- Menjaga konsistensi antara design dan implementasi
+- Mempercepat proses development
+- Menyediakan guideline yang jelas untuk tim
+
+---
+
 # Create T3 App
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
