@@ -30,6 +30,7 @@ Stack yang di gunakan yaitu [T3 Stack](https://create.t3.gg/)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **UI Components**: shadcn/ui
+- **shadcn ui preset**: b7ClPoGqG
 
 ---
 
