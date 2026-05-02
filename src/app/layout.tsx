@@ -5,6 +5,7 @@ import { Geist, Inter } from "next/font/google";
 import { cn } from "~/lib/utils";
 import { Header } from "~/components/Header";
 
+import { ThemeProvider } from "~/utils/theme-provider";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
@@ -22,10 +23,21 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={cn(geist.variable, "font-sans", inter.variable)}>
+    <html
+      lang="en"
+      className={cn(geist.variable, "font-sans", inter.variable)}
+      suppressHydrationWarning
+    >
       <body>
-        <Header />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
