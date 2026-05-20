@@ -7,6 +7,7 @@ import {
 import { IoLocationOutline } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa";
 import { HiOutlineMailOpen } from "react-icons/hi";
+import Link from "next/link";
 
 export const Footer = () => {
   const links = [
@@ -70,33 +71,33 @@ export const Footer = () => {
             </p>
 
             <div className="flex gap-4">
-              <a
+              <Link
                 href="#"
                 className="flex size-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-700 transition-colors hover:bg-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
               >
                 <FaXTwitter size={16} />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="#"
                 className="flex size-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-700 transition-colors hover:bg-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
               >
                 <FaLinkedinIn size={16} />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="#"
                 className="flex size-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-700 transition-colors hover:bg-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
               >
                 <FaYoutube size={16} />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="#"
                 className="flex size-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-700 transition-colors hover:bg-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
               >
                 <FaInstagram size={16} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -110,12 +111,12 @@ export const Footer = () => {
                 <ul className="flex list-none flex-col gap-3">
                   {link.items.map((item, itemIndex) => (
                     <li key={itemIndex}>
-                      <a
+                      <Link
                         href={item.href}
                         className="text-sm text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -182,33 +183,33 @@ export const Footer = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-5 md:gap-9">
-            <a
+            <Link
               href="#"
               className="text-sm text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
             >
               Privacy Policy
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="#"
               className="text-sm text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
             >
               Terms of Service
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="#"
               className="text-sm text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
             >
               About Us
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="#"
               className="text-sm text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
             >
               Team
-            </a>
+            </Link>
           </div>
         </div>
       </div>
