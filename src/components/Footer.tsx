@@ -3,7 +3,7 @@ import {
   FaLinkedinIn,
   FaYoutube,
   FaInstagram,
-} from "react-icons/fa6"
+} from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa";
 import { HiOutlineMailOpen } from "react-icons/hi";
@@ -37,13 +37,13 @@ export const Footer = () => {
         { name: "API Reference", href: "#" },
       ],
     },
-  ]
+  ];
 
   return (
-    <footer className="bg-zinc-50 pt-15 px-4 sm:px-6 md:px-8 lg:px-20 dark:bg-zinc-950">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row gap-16 pb-12">
-          <div className="flex-1 max-w-full lg:max-w-100">
+    <footer className="bg-zinc-50 px-4 pt-15 sm:px-6 md:px-8 lg:px-20 dark:bg-zinc-950">
+      <div className="mx-auto max-w-7xl">
+        <div className="flex flex-col gap-16 pb-12 lg:flex-row">
+          <div className="max-w-full flex-1 lg:max-w-100">
             <div className="mb-6 text-zinc-900 dark:text-zinc-100">
               <svg
                 width="27"
@@ -62,7 +62,7 @@ export const Footer = () => {
               </svg>
             </div>
 
-            <p className="text-sm leading-7 text-zinc-500 dark:text-zinc-400 mb-7 max-w-80">
+            <p className="mb-7 max-w-80 text-sm leading-7 text-zinc-500 dark:text-zinc-400">
               FOSTI is an independent non-profit organization operated by
               students of the Faculty of Communication and Informatics
               Universitas Muhammadiyah Surakarta focused on science and
@@ -72,47 +72,47 @@ export const Footer = () => {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="size-9 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center hover:bg-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 dark:hover:bg-zinc-800 transition-colors text-zinc-700 dark:text-zinc-300"
+                className="flex size-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-700 transition-colors hover:bg-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
               >
                 <FaXTwitter size={16} />
               </a>
 
               <a
                 href="#"
-                className="size-9 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center hover:bg-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 dark:hover:bg-zinc-800 transition-colors text-zinc-700 dark:text-zinc-300"
+                className="flex size-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-700 transition-colors hover:bg-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
               >
                 <FaLinkedinIn size={16} />
               </a>
 
               <a
                 href="#"
-                className="size-9 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center hover:bg-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 dark:hover:bg-zinc-800 transition-colors text-zinc-700 dark:text-zinc-300"
+                className="flex size-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-700 transition-colors hover:bg-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
               >
                 <FaYoutube size={16} />
               </a>
 
               <a
                 href="#"
-                className="size-9 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center hover:bg-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 dark:hover:bg-zinc-800 transition-colors text-zinc-700 dark:text-zinc-300"
+                className="flex size-9 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 text-zinc-700 transition-colors hover:bg-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
               >
                 <FaInstagram size={16} />
               </a>
             </div>
           </div>
 
-          <div className="flex flex-wrap sm:flex-nowrap flex-1 justify-between gap-8 w-full max-w-3xl">
+          <div className="flex w-full max-w-3xl flex-1 flex-wrap justify-between gap-8 sm:flex-nowrap">
             {links.map((link, index) => (
               <div key={index}>
-                <h3 className="text-base font-medium text-zinc-800 dark:text-zinc-100 mb-6">
+                <h3 className="mb-6 text-base font-medium text-zinc-800 dark:text-zinc-100">
                   {link.title}
                 </h3>
 
-                <ul className="flex flex-col gap-3 list-none">
+                <ul className="flex list-none flex-col gap-3">
                   {link.items.map((item, itemIndex) => (
                     <li key={itemIndex}>
                       <a
                         href={item.href}
-                        className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+                        className="text-sm text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
                       >
                         {item.name}
                       </a>
@@ -124,18 +124,18 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-6 md:gap-16 py-9 max-w-6xl">
-          <div className="flex items-start gap-2.5 flex-1">
-            <div className="size-8 rounded-lg bg-zinc-100 border border-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 flex items-center justify-center text-zinc-700 dark:text-zinc-300">
+        <div className="flex max-w-6xl flex-col gap-6 py-9 md:flex-row md:gap-16">
+          <div className="flex flex-1 items-start gap-2.5">
+            <div className="flex size-8 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-100 text-zinc-700 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300">
               <IoLocationOutline />
             </div>
 
             <div>
-              <h4 className="text-base font-medium text-zinc-800 dark:text-zinc-100 mb-0.5">
+              <h4 className="mb-0.5 text-base font-medium text-zinc-800 dark:text-zinc-100">
                 Address
               </h4>
 
-              <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+              <p className="text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
                 548 Market Street, Suite 410
                 <br />
                 San Francisco, United States
@@ -143,40 +143,40 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="flex items-start gap-2.5 flex-1">
-            <div className="size-8 rounded-lg bg-zinc-100 border border-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 flex items-center justify-center text-zinc-700 dark:text-zinc-300">
+          <div className="flex flex-1 items-start gap-2.5">
+            <div className="flex size-8 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-100 text-zinc-700 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300">
               <FaPhone />
             </div>
 
             <div>
-              <h4 className="text-base font-medium text-zinc-800 dark:text-zinc-100 mb-0.5">
+              <h4 className="mb-0.5 text-base font-medium text-zinc-800 dark:text-zinc-100">
                 Phone
               </h4>
 
-              <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+              <p className="text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
                 +1 (55) 123-4567
               </p>
             </div>
           </div>
 
-          <div className="flex items-start gap-2.5 flex-1">
-            <div className="size-8 rounded-lg bg-zinc-100 border border-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 flex items-center justify-center text-zinc-700 dark:text-zinc-300">
+          <div className="flex flex-1 items-start gap-2.5">
+            <div className="flex size-8 items-center justify-center rounded-lg border border-zinc-200 bg-zinc-100 text-zinc-700 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300">
               <HiOutlineMailOpen />
             </div>
 
             <div>
-              <h4 className="text-base font-medium text-zinc-800 dark:text-zinc-100 mb-0.5">
+              <h4 className="mb-0.5 text-base font-medium text-zinc-800 dark:text-zinc-100">
                 Email
               </h4>
 
-              <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+              <p className="text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
                 contact@prebuiltui.com
               </p>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 py-4 border-t border-zinc-300 dark:border-zinc-800">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-zinc-300 py-4 md:flex-row dark:border-zinc-800">
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
             &copy; {new Date().getFullYear()} PrebuiltUI. All Right Reserved.
           </p>
@@ -184,28 +184,28 @@ export const Footer = () => {
           <div className="flex flex-wrap justify-center gap-5 md:gap-9">
             <a
               href="#"
-              className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+              className="text-sm text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
             >
               Privacy Policy
             </a>
 
             <a
               href="#"
-              className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+              className="text-sm text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
             >
               Terms of Service
             </a>
 
             <a
               href="#"
-              className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+              className="text-sm text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
             >
               About Us
             </a>
 
             <a
               href="#"
-              className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+              className="text-sm text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
             >
               Team
             </a>
@@ -213,5 +213,5 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
