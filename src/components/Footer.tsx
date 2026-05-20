@@ -1,0 +1,217 @@
+import {
+  FaXTwitter,
+  FaLinkedinIn,
+  FaYoutube,
+  FaInstagram,
+} from "react-icons/fa6"
+import { IoLocationOutline } from "react-icons/io5";
+import { FaPhone } from "react-icons/fa";
+import { HiOutlineMailOpen } from "react-icons/hi";
+
+export const Footer = () => {
+  const links = [
+    {
+      title: "Products",
+      items: [
+        { name: "Templates", href: "#" },
+        { name: "Components", href: "#" },
+        { name: "Icons", href: "#" },
+        { name: "UI Kits", href: "#" },
+      ],
+    },
+    {
+      title: "Company",
+      items: [
+        { name: "About Us", href: "#" },
+        { name: "Careers", href: "#" },
+        { name: "Blog", href: "#" },
+        { name: "Contact", href: "#" },
+      ],
+    },
+    {
+      title: "Resources",
+      items: [
+        { name: "Documentation", href: "#" },
+        { name: "Changelog", href: "#" },
+        { name: "Support", href: "#" },
+        { name: "API Reference", href: "#" },
+      ],
+    },
+  ]
+
+  return (
+    <footer className="bg-zinc-50 pt-15 px-4 sm:px-6 md:px-8 lg:px-20 dark:bg-zinc-950">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row gap-16 pb-12">
+          <div className="flex-1 max-w-full lg:max-w-100">
+            <div className="mb-6 text-zinc-900 dark:text-zinc-100">
+              <svg
+                width="27"
+                height="29"
+                viewBox="0 0 27 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m7.25 4.11 6 3.366 6-3.367m-12 20.176v-6.721l-6-3.367m24 0-6 3.367v6.72M1.61 7.67l11.64 6.54 11.64-6.54M13.25 27.25V14.197m12 5.18V9.017c0-.454-.124-.9-.358-1.293a2.63 2.63 0 0 0-.975-.947l-9.333-5.18a2.73 2.73 0 0 0-2.667 0l-9.333 5.18a2.63 2.63 0 0 0-.976.947 2.54 2.54 0 0 0-.358 1.293v10.36c0 .454.124.9.358 1.293s.57.72.976.947l9.333 5.18a2.73 2.73 0 0 0 2.667 0l9.333-5.18a2.63 2.63 0 0 0 .975-.947 2.53 2.53 0 0 0 .358-1.293"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+
+            <p className="text-sm leading-7 text-zinc-500 dark:text-zinc-400 mb-7 max-w-80">
+              FOSTI is an independent non-profit organization operated by
+              students of the Faculty of Communication and Informatics
+              Universitas Muhammadiyah Surakarta focused on science and
+              technology development.
+            </p>
+
+            <div className="flex gap-4">
+              <a
+                href="#"
+                className="size-9 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center hover:bg-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 dark:hover:bg-zinc-800 transition-colors text-zinc-700 dark:text-zinc-300"
+              >
+                <FaXTwitter size={16} />
+              </a>
+
+              <a
+                href="#"
+                className="size-9 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center hover:bg-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 dark:hover:bg-zinc-800 transition-colors text-zinc-700 dark:text-zinc-300"
+              >
+                <FaLinkedinIn size={16} />
+              </a>
+
+              <a
+                href="#"
+                className="size-9 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center hover:bg-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 dark:hover:bg-zinc-800 transition-colors text-zinc-700 dark:text-zinc-300"
+              >
+                <FaYoutube size={16} />
+              </a>
+
+              <a
+                href="#"
+                className="size-9 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center hover:bg-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 dark:hover:bg-zinc-800 transition-colors text-zinc-700 dark:text-zinc-300"
+              >
+                <FaInstagram size={16} />
+              </a>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap sm:flex-nowrap flex-1 justify-between gap-8 w-full max-w-3xl">
+            {links.map((link, index) => (
+              <div key={index}>
+                <h3 className="text-base font-medium text-zinc-800 dark:text-zinc-100 mb-6">
+                  {link.title}
+                </h3>
+
+                <ul className="flex flex-col gap-3 list-none">
+                  {link.items.map((item, itemIndex) => (
+                    <li key={itemIndex}>
+                      <a
+                        href={item.href}
+                        className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-6 md:gap-16 py-9 max-w-6xl">
+          <div className="flex items-start gap-2.5 flex-1">
+            <div className="size-8 rounded-lg bg-zinc-100 border border-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 flex items-center justify-center text-zinc-700 dark:text-zinc-300">
+              <IoLocationOutline />
+            </div>
+
+            <div>
+              <h4 className="text-base font-medium text-zinc-800 dark:text-zinc-100 mb-0.5">
+                Address
+              </h4>
+
+              <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                548 Market Street, Suite 410
+                <br />
+                San Francisco, United States
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-2.5 flex-1">
+            <div className="size-8 rounded-lg bg-zinc-100 border border-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 flex items-center justify-center text-zinc-700 dark:text-zinc-300">
+              <FaPhone />
+            </div>
+
+            <div>
+              <h4 className="text-base font-medium text-zinc-800 dark:text-zinc-100 mb-0.5">
+                Phone
+              </h4>
+
+              <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                +1 (55) 123-4567
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-2.5 flex-1">
+            <div className="size-8 rounded-lg bg-zinc-100 border border-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 flex items-center justify-center text-zinc-700 dark:text-zinc-300">
+              <HiOutlineMailOpen />
+            </div>
+
+            <div>
+              <h4 className="text-base font-medium text-zinc-800 dark:text-zinc-100 mb-0.5">
+                Email
+              </h4>
+
+              <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                contact@prebuiltui.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 py-4 border-t border-zinc-300 dark:border-zinc-800">
+          <p className="text-sm text-zinc-500 dark:text-zinc-400">
+            &copy; {new Date().getFullYear()} PrebuiltUI. All Right Reserved.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-5 md:gap-9">
+            <a
+              href="#"
+              className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+            >
+              Privacy Policy
+            </a>
+
+            <a
+              href="#"
+              className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+            >
+              Terms of Service
+            </a>
+
+            <a
+              href="#"
+              className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+            >
+              About Us
+            </a>
+
+            <a
+              href="#"
+              className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+            >
+              Team
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
