@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { Container } from '../../components/layout/Container'
 
 export default function BlogLayout({
   children,
@@ -6,8 +7,10 @@ export default function BlogLayout({
   children: ReactNode;
 }) {
   return (
-    <article className="prose prose-lg mx-auto">
-      {children}
-    </article>
+    <Container className="py-16">
+      <article className="prose prose-lg dark:prose-invert">
+        {children}
+      </article>
+    </Container>
   );
 }
